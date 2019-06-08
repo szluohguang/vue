@@ -1,5 +1,7 @@
 # vdemo2
 
+This is  a vue application demo of eagleluo on 2019/06
+
 > A Vue.js project
 
 ## Build Setup
