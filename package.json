@@ -9,7 +9,7 @@
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
-    "server":"vue-cli-service serve"
+    "server": "vue-cli-service serve"
   },
   "dependencies": {
     "vue": "^2.5.2",
