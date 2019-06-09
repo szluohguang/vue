@@ -1,30 +1,32 @@
 
-/* eslint-disable */
 <template>
 
   <div id="app" class="box">
+     <layouts></layouts>
+    <!-- 
       <v-header class= "header"></v-header>
-      <div class="tab">
-        I am tab! 2019/06/08
-      </div>
-      <div class="content">
-        I am content! 这是我的测试程序
-      </div>
-     <!-- <router-view/>  vue欢迎页面 -->
+      <dailyreport></dailyreport>
+
+     <router-view/>  vue欢迎页面 
       <v-bottom class = "bottom"></v-bottom>
+      -->
   </div>
 
 </template>
 
 <script>
+import layouts from './components/layouts.vue'
 import header from './components/header.vue'
 import bottom from './components/bottom.vue'
+import dailyreport from './components/dailyreport.vue'
 
 export default {
   name: 'App',
   components: {
+    'layouts': layouts,
     'v-header': header,
-    'v-bottom': bottom
+    'v-bottom': bottom,
+    'dailyreport': dailyreport
   }
 }
 </script>
@@ -36,13 +38,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
-.box {
-  display: flex;
-  flex-direction: column;
-}
-.bottom {
-  align-self: flex-end;
-}
+
 </style>

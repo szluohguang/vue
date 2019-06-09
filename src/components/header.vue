@@ -1,26 +1,7 @@
-/* eslint-disable */
-<template>
-    <div>
-        <!-- 1.搭建界面 -->
-        <p class="headerBrowser">
-            <!-- a + span -->
-            <!-- (a{首页}+span{|})*7 -->            
-            <a href="">首页</a>
-            <span>|</span>
-            <a href="">首页</a>
-            <span>|</span>
-            <a href="">首页</a>
-            <span>|</span>
-            <a href="">首页</a>
-            <span>|</span>
-            <a href="">首页</a>
-            <span>|</span>
-            <a href="">首页</a>
-            <span>|</span>
-            <a href="">首页</a>    
-        </p>
 
-        <h1> I am header!</h1>
+<template>
+<div class="headerBrowser">
+        <h1> DailyReport</h1>
     </div>
 </template>
 
@@ -34,11 +15,14 @@
    <style>
         .headerBrowser{
             width: 900px;
-            height: 50px;
+            height: 70px;
             border: 1px solid black;
             margin: 0  auto;
             text-align: center;
-            line-height: 50px;
+            line-height: 30px;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
         }
  
         /* 改变字体颜色 去掉下划线 */
@@ -58,6 +42,5 @@
         .headerBrowser a:hover{
             color: gray;
         }
- 
- 
+
     </style>
