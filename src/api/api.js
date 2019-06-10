@@ -13,7 +13,7 @@ export const getTodoList = params => { // 封装名为 getTodoList的函数
 };
 
 export const addTodo = params => {
-    return axios.post('/todolist/addTodo',params)
+    return axios.post('/todolist/addtodo',params)
     .then( res => res.data)
     .catch( function( error){
         console.log( error );

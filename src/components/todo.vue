@@ -49,6 +49,7 @@ export default {
                 locked: false
             },
             items: [  // 代办列表
+            /*
                 {
                     checked: false,
                     text: '新的一天就要到来',
@@ -64,7 +65,7 @@ export default {
                     text: '本周的总结还没写呢',
                     isDelete: false
                 },               
-
+*/
             ],
             text: '' // 新增代办事项绑定的值
 
@@ -77,6 +78,13 @@ export default {
                     checked: false, text: this.text, isDelete: false
                 }
             );
+        },
+        created() {
+            fetch('http://localhost:8080/todolist/gettodolist')
+            .then( Response => response.json())
+            .then( json => {
+                this.items = json
+            })
         }
     },
     components: {
