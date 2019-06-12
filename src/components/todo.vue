@@ -40,6 +40,7 @@
 
 <script>
 import item from './item.vue';
+import {getTodoList, addTodo} from '../api/api'
 export default {
     data() {
         return {
@@ -71,6 +72,9 @@ export default {
 
         };
     },
+    created() {
+        this.init();
+    },
     methods: {
         onAdd() {
             this.items.push(
@@ -79,12 +83,20 @@ export default {
                 }
             );
         },
-        created() {
+        init() {
+            
+            getTodoList("111")
+            .then( res => {
+                this.items = res
+                alert( res );
+            });
+            /*
             fetch('http://localhost:8080/todolist/gettodolist')
             .then( Response => response.json())
             .then( json => {
                 this.items = json
             })
+            */
         }
     },
     components: {
