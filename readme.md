@@ -1,4 +1,4 @@
-# vdemo2
+# vue demo for todolist
 
 This is  a vue application demo of eagleluo on 2019/06
 
